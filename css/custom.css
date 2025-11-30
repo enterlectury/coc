@@ -1,0 +1,52 @@
+.breadcrumb {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bd_pages.jpg");
+  background-size: cover;
+  z-index: -999;
+  margin-bottom: 0px;
+}
+
+.breadcrumb::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.pages {
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px 0;
+  gap: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.scrollingTxt {
+  padding: 10px;
+}
+.scrollingTxt a {
+  font-family: "Josefin Sans", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.scrollingTxt a:hover {
+  color: #910606;
+  text-decoration: underline;
+}
+nav .navbar .left-nav ul li {
+  margin: 0 10px 0 5px !important;
+  padding: 10px 10px 10px 0 !important;
+  border-right: 1px solid #fbfbfb30;
+}
+.dropdown-content {
+  min-width: 250px;
+}
