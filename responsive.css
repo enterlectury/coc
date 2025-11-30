@@ -1,0 +1,275 @@
+/* media query 1280*/
+
+@media only screen and (max-width: 1280px) {
+  .btn_menu {
+    grid-template-columns: 10% 1fr 25%;
+  }
+
+  nav {
+    margin: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .toggle + a,
+  .menu {
+    display: none;
+    border-bottom: 1px dotted;
+  }
+
+  .toggle {
+    display: block;
+    /* background-color: #254441; */
+    padding: 0 20px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+  }
+
+  .toggle:hover {
+    background-color: #000000;
+  }
+
+  [id^="drop"]:checked + ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px dotted;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #000000;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    background-color: #470000f5;
+  }
+
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+  }
+
+  nav ul ul li:hover > ul,
+  nav ul li:hover > ul {
+    display: none;
+  }
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+  }
+
+  .section2 {
+    position: static;
+    margin: 10px 0;
+    gap: 5px;
+  }
+
+  .section2 .card-container {
+    width: 49%;
+    height: 100%;
+  }
+
+  .section2 .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  .section2 .card-container .card-box {
+    flex-direction: row;
+    position: static;
+  }
+
+  .section2 .card-container .card-box i {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+  .scrollingTxt .text {
+    margin: 0 50px;
+  }
+
+  .short_section .short_container {
+    width: 90vw;
+  }
+
+  .short_section .short_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section3 {
+    grid-template-columns: 1fr;
+    margin: 20px 20px 0 20px;
+  }
+
+  .principal_section {
+    grid-template-columns: 1fr;
+    margin: 30px 50px;
+  }
+
+  .section4 {
+    margin: 0 30px;
+  }
+
+  .events {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5px;
+    padding: 30px 0;
+  }
+
+  .events .event-container {
+    width: 49%;
+    flex-grow: 1;
+  }
+
+  .events .event-container .event-box {
+    flex-direction: row;
+    top: 0;
+    bottom: 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .events .event-container .event-box .date {
+    margin: 2px 0 0 5px;
+  }
+
+  .oLinks {
+    margin: 50px 0;
+  }
+
+  .oLinks .items {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin: 20px 20px;
+    gap: 20px;
+  }
+
+  footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    gap: 25px;
+  }
+}
+
+/* media query 810*/
+@media only screen and (max-width: 810px) {
+  .btn_menu {
+    display: none;
+  }
+
+  header .head_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header .head_container .head_logo img {
+    width: 80px;
+  }
+
+  header .head_container .college_name {
+    font-size: 10px;
+  }
+
+  header .head_container .college_name p {
+  }
+
+  .established {
+    font-size: 10px;
+    margin: 5px 0;
+  }
+
+  .scrolling_menu {
+    display: block;
+  }
+
+  .scrollingTxt .text {
+    margin: 0 20px;
+  }
+
+  .section2 .card-container {
+    width: 100%;
+  }
+
+  .short_section .short_container {
+    gap: 10px;
+  }
+
+  .section2 .card-container .card-box i {
+    margin-right: 30px;
+  }
+
+  .short_section .short_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principal_section {
+    margin: 30px 20px;
+  }
+
+  .section4 {
+    height: 100%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 30px 20px;
+  }
+
+  .fullbg {
+    margin: 50px 0 20px;
+  }
+
+  .oLinks {
+    margin: 50px 0;
+  }
+
+  .oLinks .items {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin: 20px 20px;
+    gap: 20px;
+  }
+
+  footer .footer-top {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    gap: 25px;
+  }
+}
+
+@media all and (max-width: 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+}
